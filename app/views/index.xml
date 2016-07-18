@@ -1,0 +1,76 @@
+<Alloy>
+	<TabGroup height="Ti.UI.FILL">
+		<Tab id="tabPrograma" icon="images/stopwatch_32px.png">
+			<Window  id="winPrograma" class="container" formFactor="handheld">
+
+				<Widget id="paging" src="de.manumaticx.pagingcontrol" onSelect="tabHandler"/>
+				<ScrollableView id="scrollableView">
+					<View id="view_dia1" title="Dia 1" backgroundColor="white">
+						<View  id="view_qr" class="view_btn_qr" onClick="accesoQR">
+							<Label class="lbl_qr" text="Leer QR" ></Label>
+						</View>
+						<View>
+							<TableView title="L('day1_caption')" id="day1table" class="table" onClick="table1click" onScroll="tablescroll"></TableView>
+						</View>
+					</View>
+					<View title="Dia 2" backgroundColor="white">
+						<TableView title="L('day2_caption')" id="day2table" class="table" onClick="table2click" onScroll="tablescroll"></TableView>
+					</View>
+					<View title="Dia 3" backgroundColor="white" >
+						<TableView title="L('day3_caption')" id="day3table" class="table" onClick="table3click" onScroll="tablescroll"></TableView>
+					</View>
+				</ScrollableView>
+			</Window>
+		</Tab>
+		<Tab id="tabLugar" icon="images/museum_32px.png">
+			<Window id="winLugar" >
+				<View class="viewTitulo" backgroundColor="white">
+					<Label class="lblTitulo"></Label>
+				</View>
+				<View class="viewImagen" backgroundColor="white">
+					<ImageView class="imagenView"></ImageView>
+				</View>
+				<View class = "viewDireccion" backgroundColor="gray">
+					<View class="viewImageDir">
+						<ImageView class="imageDir"></ImageView>
+					</View>
+					<View class="viewlblDir" onClick="clickmap">
+						<Label  id="lblDir" class ="lblDireccion"></Label>
+					</View>
+
+				</View>
+				<View class = "viewTelefono" backgroundColor="white">
+					<View class="viewImageTel">
+						<ImageView class="imageTel"></ImageView>
+					</View>
+					<View  id="viewlblTel" class="viewlblTel" onClick="onClickTel">
+						<Label id="lblTel" class = "lblTelefono"></Label>
+					</View>
+
+				</View>
+				<View class ="viewDescripcion" backgroundColor="white">
+					<Label class="lblDescripcion"></Label>
+				</View>
+			</Window>
+		</Tab>
+		<Tab id="tabLugar" icon="images/megaphone_32px.png" onClick="fetchTwitter">
+			<Window>
+				<TableView id="tableViewTwitter" />
+			</Window>
+		</Tab>
+		<Tab id="tabLugar" icon="images/video-camera_32px.png">
+			<Window>
+				<ScrollableView id="scroll_video">
+					<View id="ventanaVideo">
+						<VideoPlayer id="videoPlayer" ns="Ti.Media" top="15" left="10" url="/video/Appcelerator_Arrow__Salesforcecom_Connector_API.mp4"
+						height="150" width="150" backgroundColor="black" autoplay="false"/>
+						<Label class="label1" left="200" height="200" width="Ti.UI.SIZE" top="10" color="white">Appcelerator Arrow MS SQL Connector de Appcelerator Hace 1 año1.072 visualizaciones How to build mobile optimized APIs to MS SQL using Appcelerator Arrow. To learn more about Appcelerator Arrow, visit www.appcelerator.com</Label>
+						<VideoPlayer id="videoPlayer" ns="Ti.Media" top="300" left="10" url="/video/Appcelerator_Arrow_MS_SQL_Connector.mp4"
+						height="150" width="150" backgroundColor="black" autoplay="false" accessibilityLabel="Video Appcelerator" title="Video" />
+						<Label class="label1" left="200" height="200" width="Ti.UI.SIZE" top="250" color="white">How to build mobile optimized APIs to Salesforce.com using Appcelerator Arrow. To learn more about Appcelerator Arrow, visit www.appcelerator.com</Label>
+					</View>
+				</ScrollableView>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

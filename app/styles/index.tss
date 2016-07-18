@@ -1,0 +1,211 @@
+".container[platform=ios]" : {
+	backgroundColor: "#fff",
+	barColor: "#6A9E68",
+	title: L("tab1_title"),
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	layout:"vertical",
+	statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT 
+},
+
+".container[platform=android]" : {
+	backgroundColor: "#fff",
+	barColor: "#6A9E68",
+	title: L("tab1_title"),
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	layout:"vertical"
+},
+
+
+"Window[platform=android formFactor=handheld]":{
+	title: "Android Window"
+},
+
+// ".container": {
+	// backgroundColor: "#fff",
+	// layout: "vertical",
+	// orientationModes: []
+// },
+
+"#tabPrograma":{
+	color: "#89B893"
+},
+
+"#paging": {
+	top: 0,
+	indicatorColor: "#09c",
+	tabs: true,
+	backgroundColor: "#efefef",
+	font: {
+		fontSize: 20,
+		fontWeight: 'bold'
+	},
+	tabWidth: "auto"
+},
+
+"#view_dia1":{
+	layout: "vertical"
+},
+
+/**
+* esta ventana es para ponerlo como boton y ocuparlo para leer un qr 	*/
+".view_btn_qr":{
+	backgroundColor: 'gray',
+	width: '100%',
+	height: '10%',
+	layout: 'absolute',
+	borderRadius: '25dp'
+},
+
+".lbl_qr":{
+	font:{
+		fontSize: 20,
+		fontWeight: 'bold'
+	}
+},
+
+// "#viewContenido":{
+	// layout: 'horizontal'
+// },
+// 
+// ".viewHorario":{
+	// backgroundColor: 'red',
+	// layout: 'absolute'
+// },
+// 
+// ".viewTitulo":{
+	// backgroundColor: 'gray',
+	// layout: 'absolute'
+// },
+
+".table[platform=ios]":{
+	 separatorStyle:Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}
+
+
+
+//ventana lugar
+"#winLugar": {
+	backgroundColor: "#fff",
+	layout: "vertical"
+},
+
+".viewTitulo":{
+	width: "100%",
+	height: "15%",
+	layout: 'absolute'
+},
+
+".lblTitulo":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font:{
+		fontSize: 15,
+		fontWeight: 'bold'
+	},
+	color: 'black',
+	text: 'En el 2014 la conferencia se llevará acabo en el majestuo Moscone Center en San Francisco,CA U.S.A'
+},
+
+".viewImagen":{
+	width: "100%",
+	height: "35%",
+	layout: 'absolute'
+},
+
+".imagenView":{
+	image: '/images/moscone.png',
+	width: "100%",
+	height: "100%"
+},
+
+".viewDireccion":{
+	width: "100%",
+	height: "10%",
+	layout: 'horizontal'
+},
+
+".viewImageDir":{
+	width: "10%",
+	height: "100%",
+	layout: 'absolute'
+},
+
+".imageDir":{
+	image: "/images/location-pin_32px.png",
+	width: "50%",
+	height: "50%"
+},
+
+".viewlblDir":{
+	width: "90%",
+	height: "100%",
+	layout: 'absolute'
+},
+
+".lblDireccion":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font:{
+		fontSize: 15,
+		fontWeight: 'bold'
+	},
+	color: 'black',
+	text: '747 Howard St, San Francisco, CA 94103'
+},
+
+".viewTelefono":{
+	width: "100%",
+	height: "10%",
+	layout: 'horizontal'
+},
+
+".viewImageTel":{
+	width: "10%",
+	height: "100%",
+	layout: 'absolute'
+},
+
+".imageTel":{
+	image: "/images/call_32px.png",
+	width: "50%",
+	height: "50%"
+}
+
+".viewlblTel":{
+	width: "90%",
+	height: "100%",
+	layout: 'absolute'
+},
+
+".lblTelefono":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font:{
+		fontSize: 15,
+		fontWeight: 'bold'
+	},
+	color: 'black',
+	text: '+(415)9744000'
+},
+
+".viewDescripcion":{
+	width: "100%",
+	height: "30%",
+	layout: 'absolute'
+},
+
+".lblDescripcion":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font:{
+		fontSize: 15
+	},
+	color: 'black',
+	text: 'Localizado en el corazón de SOMA en San Francisco\n el Moscone Center cuenta con 992,000 pies\n cuadrados de áreas para reuniones y exhibiciones,\n incluyendo 107 salones de reunión, tres ball rooms y\n sobre 151,000 pies cuadrados de áreas para recepción.'
+},
+
+".label1":{
+	
+	font:{
+		fontSize: 12,
+		fontWeight: 'bold'
+	},
+	
+}
+

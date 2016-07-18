@@ -1,0 +1,13 @@
+<Alloy>
+	<TableViewRow id="row" class="row" rowId="">
+		<View class="timecol">
+			<Label id="time" class="timecaption"></Label>
+			<Label id="location" class="locationcaption"></Label>
+		</View>
+		<View class="descriptioncol">
+			<Label id="talkname" class="talkname"></Label>
+			<Label id="speaker" class="speaker"></Label>
+			<Label id="talkdescription" class="talkdescription"></Label>
+		</View>
+	</TableViewRow>
+</Alloy>

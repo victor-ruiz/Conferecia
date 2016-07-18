@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="winQR" class="container" onOpen="doopen">
+
+		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closewin" platform="android"/>
+
+	</Window>
+</Alloy>
